@@ -1,27 +1,48 @@
 .form {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  height: 80px;
+  justify-content: flex-start;
   align-items: center;
+  height: 80px;
+  &__section {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+    &:first-of-type {
+      margin-bottom: 10px;
+    }
+  }
   &__input {
     &_heading {
       border: 1px solid #118CAD;
+      width: 100%;
+      border-top-left-radius: 10px;
+      border-bottom-left-radius: 10px;
+      border-right: 0px;
     }
     &_text {
       border: 1px solid #118CAD;
+      width: 100%;
+      border-radius: 10px;
+      border-top-right-radius: 0px;
+      border-bottom-right-radius: 0px;
     }
     &_create {
       border: 1px solid #118CAD;
       color: #118CAD;
       background: none;
-      height: 21px;
     }
   }
   &__heading {
     color: #118CAD;
+    margin-right: 10px;
   }
   &__text {
     color: #118CAD;
+    margin-right: 10px;
+  }
+  &__break {
+    height: 0px;
+    width: 100%;
   }
 }

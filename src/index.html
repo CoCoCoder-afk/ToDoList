@@ -8,8 +8,8 @@
 <body>
   <main class = "main">
     <section class = "main__section section">
-      <div class = "section__menu menu">
-        <p class = "menu__heading">The best ToDoList</p>
+      <div class = "menu">
+        <span class = "menu__heading"><img class = "menu__logo" src = "./img/list.png">The best ToDoList</span>
         <div id = "list" class = "menu__list list">
           <div class = "list__item item">
             <span class = "item__heading">
@@ -103,8 +103,14 @@
           </div>
         </div>
         <form id = "form" class = "menu__form form">
-          <span class = "form__heading">Заголовок<input id = "inputHeading"  class = "form__input form__input_heading" type = "text"><input class = "form__input_create" type = "submit" value = "Создать"></span>
-          <span class = "form__text"><input id = "inputText" class = "form__input form__input_text" type = "text">Описание</span>
+          <div class = "form__section">
+            <span class = "form__heading">Заголовок</span><input id = "inputHeading"  class = "form__input form__input_heading" type = "text"><input class = "form__input_create" type = "submit" value = "Создать">
+          </div>
+          <div class = "form__break"></div>
+          <div class = "form__section">
+            <span class = "form__text">Описание</span>
+            <input id = "inputText" class = "form__input form__input_text" type = "text">
+          </div>
         </form>
         </div>
       </div>
